@@ -1,17 +1,3 @@
-        Little Crab (version 2)
-        ===========
-        
-This scenario is part of the book 
+Yet Another Crab Game
 
-    "Introduction to Programming with Greenfoot"
-    (Second edition)
-    by Michael Kölling
-    ISBN: 0134054296
-
-This scenario is discussed in detail in that book.
-
-Copyright (c) Michael Kölling.
-
-
-This is the second version of the scenario. Here, the crabs walk around 
-the beach more or less randomly, and turns around at the edge of the world.
+Yes I modified the code from the original, I wanted to do much more but couldn't because I ran out of time.
