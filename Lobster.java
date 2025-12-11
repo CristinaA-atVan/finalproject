@@ -1,4 +1,3 @@
-import lang.stride.*;
 import java.util.*;
 import greenfoot.*;
 
@@ -7,7 +6,6 @@ import greenfoot.*;
  */
 public class Lobster extends Actor
 {
-
     /**
      * Turn the lobster anywhere between 0-360 degrees
      */
@@ -23,7 +21,6 @@ public class Lobster extends Actor
     {
         moveAround();
         removeCrab();
-        replaceWorm();
         if (isGameOver()) {
             transitionToGameOverWorld();
         }
@@ -34,7 +31,7 @@ public class Lobster extends Actor
      */
     public void moveAround()
     {
-        move(4);
+        move(2);
         if (Greenfoot.getRandomNumber(10) == 1) {
             turn(Greenfoot.getRandomNumber(90) - 45);
         }
@@ -53,20 +50,6 @@ public class Lobster extends Actor
             World world = getWorld();
             world.removeObject(crab);
             Greenfoot.playSound("au.wav");
-        }
-    }
-
-    /**
-     * Replace worms with lobsters on intersection
-     */
-    public void replaceWorm()
-    {
-        Actor worm = getOneIntersectingObject(Worm.class);
-        Actor lobster =  new  Lobster();
-        if (worm != null) {
-            World world = getWorld();
-            world.removeObject(worm);
-            getWorld().addObject(lobster, getX(), getY());
         }
     }
 

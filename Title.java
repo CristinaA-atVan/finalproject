@@ -1,30 +1,28 @@
-import java.util.*;
-import greenfoot.*;
+import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
+ * The title screen
  * 
+ * @author Cristina Arnoldo
+ * @version 1
  */
-public class GameOverWorld extends World
+public class Title extends World
 {
-
     /**
-     * Constructor for objects of class GameOverWorld.
+     * Constructor for objects of class Title.
+     * 
      */
-    public GameOverWorld()
-    {
+    public Title()
+    {    
         super(560, 560, 1);
-        showTextWithBigWhiteFont("GAME OVER!", 150, 280);
-        showTextWithSmallWhiteFont("Press SPACE try again!", 200, 400);
+        prepare();
     }
-
+    
     public void act()
     {
         waitForInput();
     }
     
-    /**
-     * Show text with a big black font
-     */
     public void showTextWithBigWhiteFont(String message, int x, int y)
     {
         GreenfootImage bg = getBackground();
@@ -50,5 +48,11 @@ public class GameOverWorld extends World
             World game = new CrabWorld();
             Greenfoot.setWorld(game);
         }
+    }
+    
+    public void prepare()
+    {
+        showTextWithBigWhiteFont("ENDLESS CRAB GAME", 5, 150);
+        showTextWithSmallWhiteFont("Press SPACE to play!", 200, 400);
     }
 }

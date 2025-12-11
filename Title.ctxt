@@ -1,16 +1,17 @@
 #BlueJ class context
-comment0.target=GameOverWorld
-comment0.text=\r\n\ \r\n
+comment0.target=Title
+comment0.text=\r\n\ The\ title\ screen\r\n\ \r\n\ @author\ Cristina\ Arnoldo\r\n\ @version\ 1\r\n
 comment1.params=
-comment1.target=GameOverWorld()
-comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ GameOverWorld.\r\n
+comment1.target=Title()
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Title.\r\n\ \r\n
 comment2.params=
 comment2.target=void\ act()
 comment3.params=message\ x\ y
 comment3.target=void\ showTextWithBigWhiteFont(java.lang.String,\ int,\ int)
-comment3.text=\r\n\ Show\ text\ with\ a\ big\ black\ font\r\n
 comment4.params=message\ x\ y
 comment4.target=void\ showTextWithSmallWhiteFont(java.lang.String,\ int,\ int)
 comment5.params=
 comment5.target=void\ waitForInput()
-numComments=6
+comment6.params=
+comment6.target=void\ prepare()
+numComments=7

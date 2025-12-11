@@ -2,26 +2,25 @@ import greenfoot.*;
 
 /**
  * This is the player class
- * Version: 2
- * In this version, the crab walks around the beach more or less randomly.
+ * Version: 1
  */
 public class Crab extends Actor
 {
     int spd;
     public Crab()
     {
-        spd = 3;
+        spd = 2;
     }
+    
     /**
-     * Act - do whatever the crab wants to do. This method is called whenever the 'Act' or 'Run' button gets pressed in the environment.
+     * All the methods are here yippee
      */
     public void act()
     {
         move();
         eat();
         if (isGameWon()) {
-            transitionToGameWonWorld();
-            Greenfoot.playSound("fanfare.wav");
+            transitionToNextLevel();
         }
     }
 
@@ -70,13 +69,13 @@ public class Crab extends Actor
             return false;
         }
     }
-
+    
     /**
-     * Transition to the game won world
+     * Transition to the next level
      */
-    public void transitionToGameWonWorld()
+    public void transitionToNextLevel()
     {
-        World gameWonWorld =  new  GameWonWorld();
-        Greenfoot.setWorld(gameWonWorld);
+        World world = new CrabWorld();
+        Greenfoot.setWorld(world);
     }
 }

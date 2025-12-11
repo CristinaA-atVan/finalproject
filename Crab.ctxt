@@ -1,11 +1,11 @@
 #BlueJ class context
 comment0.target=Crab
-comment0.text=\r\n\ This\ is\ the\ player\ class\r\n\ Version\:\ 2\r\n\ In\ this\ version,\ the\ crab\ walks\ around\ the\ beach\ more\ or\ less\ randomly.\r\n
+comment0.text=\r\n\ This\ is\ the\ player\ class\r\n\ Version\:\ 1\r\n
 comment1.params=
 comment1.target=Crab()
 comment2.params=
 comment2.target=void\ act()
-comment2.text=\r\n\ Act\ -\ do\ whatever\ the\ crab\ wants\ to\ do.\ This\ method\ is\ called\ whenever\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+comment2.text=\r\n\ All\ the\ methods\ are\ here\ yippee\r\n
 comment3.params=
 comment3.target=void\ move()
 comment3.text=\r\n\ Adds\ movement\ and\ turning\r\n
@@ -16,6 +16,6 @@ comment5.params=
 comment5.target=boolean\ isGameWon()
 comment5.text=\r\n\ Check\ if\ the\ game\ is\ won\ or\ not\r\n
 comment6.params=
-comment6.target=void\ transitionToGameWonWorld()
-comment6.text=\r\n\ Transition\ to\ the\ game\ won\ world\r\n
+comment6.target=void\ transitionToNextLevel()
+comment6.text=\r\n\ Transition\ to\ the\ next\ level\r\n
 numComments=7
