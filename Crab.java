@@ -1,21 +1,23 @@
 import greenfoot.*;
 
 /**
- * This class defines a crab. Crabs live on the beach.
+ * This is the player class
  * Version: 2
  * In this version, the crab walks around the beach more or less randomly.
  */
 public class Crab extends Actor
 {
-
-    /* (World, Actor, GreenfootImage, and Greenfoot)*/
-
+    int spd;
+    public Crab()
+    {
+        spd = 3;
+    }
     /**
      * Act - do whatever the crab wants to do. This method is called whenever the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act()
     {
-        moveAndTurn();
+        move();
         eat();
         if (isGameWon()) {
             transitionToGameWonWorld();
@@ -26,14 +28,19 @@ public class Crab extends Actor
     /**
      * Adds movement and turning
      */
-    public void moveAndTurn()
+    public void move()
     {
-        move(4);
         if (Greenfoot.isKeyDown("left")) {
-            turn(-3);
+            setLocation(getX()-spd, getY());
         }
         if (Greenfoot.isKeyDown("right")) {
-            turn(3);
+            setLocation(getX()+spd, getY());
+        }
+        if (Greenfoot.isKeyDown("up")) {
+            setLocation(getX(), getY()-spd);
+        }
+        if (Greenfoot.isKeyDown("down")) {
+            setLocation(getX(), getY()+spd);
         }
     }
 
